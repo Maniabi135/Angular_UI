@@ -1,0 +1,19 @@
+<div class="ms_side_menu_content">
+    <div class="ms_adapt_logo" [routerLink]="['/dashboard']"></div>
+    <ul>
+        <li *ngFor="let topMenu of topMenuItems" [routerLinkActive]="'active'" [routerLink]="[topMenu.path]">
+            <a>
+                <img [src]="topMenu.image" alt="">
+                <div class="ms_notify_dot" *ngIf="topMenu.title == 'My Leads'"></div>
+            </a>
+        </li>
+        <!-- </ul>
+    <ul class="ms_user_profile"> -->
+        <li *ngFor="let bottomMenu of bottomMenuItems">
+            <a [routerLinkActive]="'active'" [routerLink]="[bottomMenu.path]">
+                <img [src]="bottomMenu.image" alt="">
+                <div class="ms_notify_dot" *ngIf="bottomMenu.title == 'Notification'"></div>
+            </a>
+        </li>
+    </ul>
+</div>

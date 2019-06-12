@@ -1,0 +1,19 @@
+.ms_main_container {
+    position: relative;
+    .ms_side_menu {
+        margin: 0;
+        padding: 0;
+        width: 60px;
+        position: fixed;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        background-color: #2176b7;
+    }
+    .ms_content_body {
+        margin-left: 60px;
+        padding: 15px 10px 30px;
+        background: #fbfbfb;
+        height: 100vh;
+    }
+}
